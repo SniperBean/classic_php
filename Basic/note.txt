@@ -1,0 +1,4 @@
+//build image
+docker build -t my-php-app .
+//run image
+docker run -p 80:80 -v $(pwd)/src/:/var/www/html/ my-php-app
